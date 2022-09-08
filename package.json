@@ -1,0 +1,20 @@
+{
+  "name": "qazando-automation",
+  "version": "1.0.0",
+  "description": "Projeto de testes automatizados qazando",
+  "scripts": {
+    "android": "npx codeceptjs run --reporter mochawesome --steps",
+    "android:tag": "npx codeceptjs run --reporter mochawesome --steps --grep @login",
+    "generate:new-steps": "npx codeceptjs gherkin:snippets"
+  },
+  "author": "Thairam Michel",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.3.4",
+    "mochawesome": "^6.1.1",
+    "webdriverio": "^6.1.11"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1"
+  }
+}
